@@ -1,0 +1,11 @@
+@use 'colors' as *;
+@use 'numbers' as *;
+*{
+    box-sizing: border-box;
+    font-size: 10px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: $eggshell;
+}
