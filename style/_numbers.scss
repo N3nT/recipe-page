@@ -4,7 +4,6 @@ $borderRadius: 1em;
 //recipe-wrap
 $recipeWrap-width: 100%;
 $recipeWrap-padding: 2em;
-$recipeWrap-borderRadius: 0; //1.5
 $recipeWrap-img-borderRadius: 1em;
 $recipeWrap-headingTitle-margin: 1em;
 $recipeWrap-headingTitle-fontSize: 2.4rem;
@@ -22,3 +21,7 @@ $list-listElement-marginBottom: 1em;
 
 //nutrition-section
 $nutritionSection-description-marginBottom: 1em;
+
+//Media 768px
+$medium-recipeWrap-width: 600px;
+$medium-recipeWrap-marginTB: 5em; //tb = top,bottom
