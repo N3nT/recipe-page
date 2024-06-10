@@ -6,6 +6,115 @@
 }
 body{
     width: 100vw;
-    height: 100vh;
     background-color: $eggshell;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Outfit", sans-serif;
+    color: $wenge-brown;
+}
+.section-gap{
+    margin: 2em 0 1em 0;
+    width: 100%;
+    height: 1px;
+    background-color: $light-grey;
+}
+.section-title{
+    margin-bottom: 1em;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: $nutmeg;
+    line-height: 2em;
+}
+.recipe-wrap{
+    width: $recipeWrap-width;
+    padding: $recipeWrap-padding;
+    border-radius: $recipeWrap-borderRadius;
+    background-color: $white;
+    &__heading-img{
+        img{
+            width: 100%;
+            border-radius: $recipeWrap-img-borderRadius;
+        }
+    }
+    &__heading-title{
+        margin: $recipeWrap-headingTitle-margin 0;
+        font-family: 'Young Serif', sans-serif;
+        font-size: $recipeWrap-headingTitle-fontSize;
+        color: $dark-charcoal;
+    }
+    &__preparation-wrap{
+        width: 100%;
+        padding: $preparationWrap-padding;
+        margin: $preparationWrap-margin 0;
+        background-color: $rose-white;
+        border-radius: $borderRadius;
+        line-height: $preparationWrap-lineHeight;
+        &__title{
+            margin-bottom: $preparationWrap-title-marginBottom;
+            font-size: $preparationWrap-title-fontSize;
+            font-weight: 600;
+            color: $dark-raspberry;
+        }
+        &__list{
+            margin-left: $list-marginLeft;
+            &__list-element{
+                span{
+                    font-weight: 600;
+                    color: $nutmeg;
+                }
+            }
+        }
+        ul{
+            list-style-type: disc;
+        }
+    }
+    .ingredients-section{
+        &__list{
+            list-style-type: disc;
+            margin-left: $list-marginLeft;
+            &__list-element{
+                margin-bottom: $list-listElement-marginBottom;
+            }
+        }
+    }
+    .instructions-section{
+        &__list{
+            margin-left: $list-marginLeft;
+            list-style-type: decimal;
+            &__list-element{
+                margin-bottom: $list-listElement-marginBottom;
+                &::marker{
+                    font-weight: 700;
+                }
+            }
+            span{
+                font-weight: 700;
+            }
+        }
+    }
+    .nutrition-section{
+        &__description{
+            margin-bottom: $nutritionSection-description-marginBottom;
+        }
+        &__table{
+            width: 100%;
+            tr{
+               border-bottom: 1px solid $light-grey;
+               height: 3em;
+               &:last-child{
+                border: none;
+               }
+            }
+            td{
+                padding-left: 2em;
+                padding-bottom: 0.5em;
+                vertical-align: bottom;
+            }
+            &__second-td{
+                font-weight: 700;
+            }
+        }
+    }
 }
